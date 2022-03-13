@@ -37,23 +37,23 @@ There is `ssh` service running.
 
 Website contained some sort of Top Song list, and used two `GET` parameters to filter it.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b6d3d4b5-94db-41be-9ca1-90edda78c700/Untitled.png)
+![image](https://user-images.githubusercontent.com/44019881/158075122-47a8a62b-5faf-4559-98aa-35085fc78ff5.png)
 
 When changing parameter `playlistTop` to something nonexistent like `asdf` server returned error.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f060dde7-1e16-47f2-b4a9-82f4c5fa373c/Untitled.png)
+![image](https://user-images.githubusercontent.com/44019881/158075127-e9511a2c-728b-482d-a3fe-ea2bebde8f33.png)
 
 Using `php://filter/convert.bse64-encode/resource=` local file inclusion was performed.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d4e3029d-63ad-43bb-b6e5-64078bd2213d/Untitled.png)
+![image](https://user-images.githubusercontent.com/44019881/158075138-54d89bb4-b90f-47ca-94b0-ac5c69823378.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c69ce8d-d042-40d0-b2fa-0e9d252d968a/Untitled.png)
+![image](https://user-images.githubusercontent.com/44019881/158075143-91c3b4be-cae8-413f-a0bb-f74f93db598a.png)
 
 This allowed to read `leonardo` user `private ssh` key.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af3a4e70-9a1c-43e1-8a81-6d8c249246eb/Untitled.png)
+![image](https://user-images.githubusercontent.com/44019881/158075151-26c845e9-4a26-43dc-bbbc-e6d4cf190ad9.png)
 
 # SSH Connection
 
 Using all obtained information login as user `leonardo` via SSH was possible
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25c93519-8403-4ad7-8ce4-0e351e5beada/Untitled.png)
+![image](https://user-images.githubusercontent.com/44019881/158075157-84e8136c-b29d-4b39-b567-0a4447e3aac4.png)
